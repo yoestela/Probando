@@ -1,0 +1,524 @@
+@charset "utf-8";
+
+body{
+    background-color: #e3e3e3;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0 auto;
+    min-width: 736px;
+    width: 100%;
+}
+
+.main {
+    max-width: 1100px;
+    margin: 10px auto;
+    width: 95%;
+}
+
+/*************************HEADER*************************************************************/
+header{
+    position: relative;
+    top: 0;
+    z-index: 100;
+    display: block;
+    height: 132px;
+    margin: 0 auto;
+    overflow-y: hidden;
+    padding: 0 4px;
+    width: 100%;
+    background-image: url("img/encabezado.jpg");
+    background-repeat:repeat-x;   
+}
+
+#logo {
+    height: 50px;
+    left: 25px;
+    position: relative;
+    top: 28px;
+    width: 500px;
+    background-image: url("img/logo.png");
+}
+
+#topMenu{
+    float:right;
+    height: 40px;
+    margin: 0 1%;
+    position: relative;
+    top: 40px;
+    width: 300px;
+}
+#topMenu a {
+    display:block;
+    height:40px;
+    width:40px;
+    float:left;
+    margin:0 10px;
+}
+
+#breadcrumb {
+    font-size: 12px;
+    margin: 24px 0 0 25px;
+    height: 50px;
+    color:#cccccc;
+}
+
+#breadcrumb a {
+    color:#cccccc;
+    text-decoration: none;
+}
+
+
+/*********************MAIN****************************/
+/**********PAra estructurar la pagiona**************************/
+.clear {
+    clear:both;
+}
+.left {
+    display:block;
+    max-width: 728px;
+    float:left;
+}
+
+.right {
+    float: right;
+    margin: 0 0 0 30px;
+    max-width: 336px;
+    width: 100%; 
+}
+.col{
+    margin: 0 10px 10px 0;    
+}
+.details{
+    margin: 10px 10px;
+}
+     
+/* Alpha results */
+
+#search,#popular,#tableList,#softSearch {
+    display: block;
+    float: left;
+    margin: 0;
+    /* max-width: 650px; */
+    padding: 0; 
+}
+#search,#softSearch {
+    width: 100%;
+    margin:10px 0;
+}
+#search {
+    display:none; 
+}
+
+#search ol,#tableList ol,#softSearch ol {
+    display:block;
+    margin: 0 0 0 -40px;
+}
+#search ol li a{
+    display:none;
+}
+#search .convertForm a,#tableList .convertForm a,#softSearch .convertForm a {
+    display:block;
+}
+#search li,#popular a,#tableList li,#softSearch li {
+    background-color: #cccccc;
+    color: #666666;
+    display: block;
+    font-size: 14px;
+    line-height: 14px;
+    margin: 1px 0;
+    padding: 0 20px;
+    width: 96.2%;
+}
+#search .argument,#softSearch .argument {
+    font-size: 24px;
+    height: 30px;
+    padding: 2px 10px;
+    width: 120px;
+}
+
+
+
+/******formulario de entrada del usuario***************/
+.convertForm {
+    height: 50px;
+}
+.convertForm a,#popular a {
+    background-color: #3e7589;
+    color: #fff;
+    display: block;
+    float: right;
+    font-size: 16px;
+    font-weight: bold;
+    height: 36px;
+    line-height: 36px;
+    margin: 0 3px;
+    max-width: 150px;
+    padding: 0 10px;
+    text-decoration: none;
+}
+
+
+
+/**********la clase control son para la respuesta del formato de salida del usuario********/
+.underButton,.control,.tableControl,.leftButton,.rightButton {
+    background-repeat: no-repeat;
+    color: #fff;
+    display: block;
+    font-size: 16px;
+    font-weight: bold;
+    line-height: 50px;
+    min-height: 50px;
+    padding: 0 0 0 60px;
+    text-decoration: none;
+    max-width: 678px;
+}
+.control {
+    background-color: #a6a6a6;
+    height: 35px;
+    line-height: 30px;
+    margin: 0 0 2px;
+    min-height: 35px;
+    padding: 0 0 0 10%;
+    width: 90%;
+}
+#sigfig,#format,#startval,#incs,#sigfigipt,#opformat,.tableParam {
+    float: right;
+    font-family: Arial,Helvetica,sans-serif;
+    font-size: 14px;
+    font-weight: bold;
+    height: 26px;
+    margin: 4px 40px;
+    min-width: 200px;
+    color: #4c4c4c;
+}
+#startval {
+    height:20px;
+    padding: 2px 5px;
+}
+#incs,#sigfigipt,#opformat {
+    padding: 2px 5px;
+    width: 212px;
+}
+#answer {
+    font-size: 60px;
+    line-height: 60px;
+    margin: 20px 0;
+    overflow: hidden;
+    text-align: center;
+    width:auto;
+}
+
+
+#userInputRight h1{
+    color: #fff;
+    font-size: 26px;
+    margin: 10px 0;
+    width: 90%;
+    text-align: left;
+}
+#userInput h1 {
+    background-repeat: no-repeat;
+    background-size: 10% auto;
+    color: #ffffff;
+    font-size: 24px;
+    min-height: 15px;
+    padding: 0;
+    text-align: left;               
+}
+#userInput p {
+    color: #fff;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+
+/**************ESTILOS GENERALES******************/
+h1 {
+    color: #333333;
+    font-size: 30px;
+    text-align: center;
+    line-height:35px;
+    height:50px;
+    background-repeat: no-repeat;
+}
+
+h2 a, p a, h3 a {
+    color:#064d6b;
+    text-decoration: none;
+}
+
+p { 
+    color: #4c4c4c;    
+}
+ul{
+    padding: 10px 10px;
+    list-style: none;                
+}
+
+li{
+    width: 350px;
+    float:left;
+}
+
+article li {
+    float:none;
+    width:auto;
+    list-style-type: circle;
+}
+
+
+.footerText p {
+    color:#fff;
+}
+
+
+footer {
+    padding:1px 0 0 0;
+    width:100%;
+    height:350px;
+    margin:0 0 0 0;
+}
+
+
+
+.footerText {
+    background-color:#413f3f;
+    color:#fff;
+    padding: 10px 10px;
+}
+
+.footerText a {
+    color:#ffffcc;
+    text-decoration: none;
+}
+
+/***************************Menu costado******************/
+.sideMenu {
+    display: block;
+    float: left;
+    margin: 10px 0;
+    min-width: 160px;
+    width: 100%;
+    max-width:300px;
+}
+
+.homeSideMenu {
+    float:right;
+    min-width: 32%;
+}
+.type,.typeConv,.feature,.featureConv,.unit,.tounit,.unitConv,.popLink {
+    display:block;
+    margin:0 0 2px 0;
+    height:50px;
+    background-color:#a6a6a6;
+    background-repeat: no-repeat;
+    background-position: 5px 5px;
+    color: #ffffff;
+    font-weight: bold;
+    line-height: 50px;
+/*    padding: 0 0 0 60px; */
+    padding: 0 0 0 18%;
+    text-decoration: none;
+    width: 92%;                              
+}
+.featureConv {
+    font-size: 14px;
+    font-weight: bold;
+    line-height: 15px;
+    min-height: 40px;
+    padding: 10px 2% 0 20%;
+    width: 78%;
+}
+.typeConv,.popLink {
+    font-size: 14px;
+    font-weight: bold;
+    line-height: 50px;
+    min-height: 50px;
+    padding: 0 0 0 20%;
+    width: 80%;
+}
+.rightHome .featureConv,.rightHome .typeConv {
+    width: 86.5%;    
+}
+
+/***************Menues dispersos******************/
+
+#menulinks, #langlinks, #conversionlinks, #promolinks {
+    display:block;
+    width:100%;
+    color:#333333;
+    text-decoration: none;
+    background-color:#a6a6a6;
+    height:80px;
+}
+#conversionlinks {
+    height:60px;
+}
+
+#menulinks a,#langlinks a, #conversionlinks a, #promolinks a {
+    display:block;
+    width:100%;
+    color:#333333;
+    text-decoration: none;
+    background-color:#a6a6a6;               
+}
+#promolinks {
+    margin: -16px 0;
+}
+
+
+
+#userInput,#userConvert,.underButton,.leftButton,.rightButton,#userTable {
+    background-color:#3e7589;
+    /*min-height:20px;*/
+    margin: 0 0 2px;               
+    padding: 2% 5%;
+    width: 90%;
+    line-height:24px;
+}
+#userConvert h1,#userTable h1 {
+    color: #fff;
+    font-size: 22px;
+}
+.underButton,.control,.tableControl,.leftButton,.rightButton {
+    background-repeat: no-repeat;
+    color: #fff;
+    display: block;
+    font-size: 16px;
+    font-weight: bold;
+    line-height: 50px;
+    min-height: 50px;
+    padding: 0 0 0 60px;
+    text-decoration: none;
+    max-width: 678px;
+}
+.underButton {
+    max-width: 668px;
+    width:100%;
+}
+.infoLink {
+    cursor: pointer;
+}
+.infoBox {
+    background-color: #eeeeee;
+    display: none;
+    font-size: 20px;
+    min-height: 40px;
+    padding: 10px;
+}
+/****************todos los wcol***********/
+#working {
+    position:relative;
+    padding:20px 0 20px 0;
+}
+.wrow {
+    display:block;
+    height:80px;
+}
+.wspace {
+    display:block;
+    height:30px;
+}
+.wcol {
+    float:left;
+    text-align:center;
+    line-height:15px;
+}
+.wleft {
+    clear:both;
+    width:60px;
+}
+.wmiddle {
+    width:300px;
+}
+.wline {
+    line-height:2px;
+}
+
+
+
+.inputField,.searchField {
+    font-size: 24px;
+    height: 39px;
+    border: 1px solid #064d6b;
+    padding: 0 0 0 3%;
+    width: 93%;   
+}
+
+#boxAd {
+    margin:10px 0;
+}
+.noadcolumn .tounit,.withadcolumn .tounit {
+    width: 72%;
+}
+.bluebg {
+    background-color: #3e7589;
+}
+.greyBg {
+    background-color:#a6a6a6;
+    height:90px;
+}
+
+.type:hover,.typeConv:hover,.feature:hover,.featureConv:hover,.unit:hover,.tounit:hover,
+.convertForm a:hover,#popular a:hover,.popLink:hover {
+    background-color:#413f3f;
+}
+
+
+
+            
+/*****************************Iconos de la pagina*************************************************/
+.temperature {
+    background-image: url("img/temperatura.png");
+}
+.weight {
+    background-image: url("img/peso.png");
+}
+.length {
+    background-image: url("img/longitud.png");
+}
+.area {
+    background-image: url("img/area.png");
+}
+.volume {
+    background-image: url("img/volumen.png");
+}
+
+.speed {
+    background-image: url("img/velocidad.png");
+}
+.currency {
+    background-image:url("img/moneda.png");
+}
+.time {
+       background-image:url("img/tiempo.png");
+}
+.swapIcon {
+    background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyVJREFUeNrsmV9oUlEcxzW3cZd/hot0W0Zm66nWY9BDQU/SW0NwLxVhL425B0HYHgMffAv6Rw+iD7MW+JZ7UPNFCAyHIRhIfyBBmShlrNtQJ+rte8PBzd3jnN7BkHPgxzme8zu/8/ucezz391M5x3GyYSgnZENSKAgFoSAUhIJQEApCQY5hGRHrlMvl/30WBpYYm0X1A32/CXNPopobYJNYyHfYr4r5QwpyRw6zAgxeSCQSjyKRSBxtP4z+6dRB30y9Xn9eqVQm+qEolUrfXC7XG9gPwhbb80SesFPEdFDOxePxNbQ5OMo6nc4H6FOKzYfMQxpcn6XRaFTcbvd9MX8I6/UGgmKIRqMvhYvt7u5u2+32OxgbJxhf5AYo5XL5M2yPSgkyHQwGH4sthuPz02azWaHDEBZYHQQmHA5PSwWiCwQC7lar1SQttrOzs2W1Wm9Dd4ywyLN+QVKp1MVeQbp92U/5fL6HFovFiS8e8QZSKpUzHo/nCcuydei94494h8oyZJM/gsRrimUvazSa5YHuX8ITYfx+vx1Pot7r7sGZr2az+Sppx7pJOp2+dSRPBAM6VAuQtKDvCnZ8VKjXbDaLCoVii2+r1WoZzvTd9u4fmxdiDtV14S7glioyDKMX6uXz+TWj0bhCQxQKQkEoyHCD4FbUQS7tSTKZnBLT83q9Jn4czT2ZPNT1e9QF0e21QqFwD7Ea044ORB10OBwrCEz/5SUqlaqi1+tfoBmTHARxFoMdMxygVsB7qCXswEs0ZDAYFjHX3G2iyWS6Kfi4DnlPfMpiYbtYhlir1fa9EHO5XBzhRbJL+NNcWlpax4vzI7d/IT78D2OtGz2EURvQm4c0iX+D9JpYVavVYj8RbDabjWm12jlCjDSBeG6z23yMR1GNSZJYtUGy/YbjmUxmA2ZmCU5MwtlPBIgPqMYlyxD5PqS3rwdJkpDrv4KpswRHTsPpLx0Q/HGckDTVbfefgfFfg8CEQqGnMDdFcIa3n2tDZHg4yXN2wdh5yFvIdr+/K0AWuuQm/PGL8VAkf0hz5fTPUApCQSgIBaEgFISCUBAKclD5K8AAADVfjwCAFwYAAAAASUVORK5CYII=);
+}
+.tableIcon {
+    background-image: url("img/tabla_de_conversiones.png");
+    background-position: 0px 0px;
+}
+.appIcon {
+    background-image: url("img/app.png");
+}
+
+.calcIcon {
+    background-image: url("img/calculadora.png");
+}
+.home,.homeIcon {
+    background-image: url("img/home.png");
+}
+.sitemap {
+    background-image: url("img/site_map.png");
+}
+.links {
+    background-image: url("img/enlaces.png");
+}
+
+.contact {
+    background-image: url("img/correo.png");
+}
+.webmaster {
+    background-image: url("img/herramientas.png");
+}

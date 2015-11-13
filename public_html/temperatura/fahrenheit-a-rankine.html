@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<!--
+    De farenheit a
+-->
+<html>
+    <head>
+        <meta charset="UTF-8">
+	<meta content="text/html; charset=UTF-8" http-equiv="Content-Type">
+	<title>Conversión de grados Fahrenheit a grados Rankine</title>
+        <meta content="Calculadoras de conversión de temperatura para unidades métricas e imperiales incluyendo centígrados y fahrenheit" name="Description">
+	<link rel="shortcut icon" type="image/ico" href="favicon.ico">
+        <link href="../css/estiloprincipal.css" rel="stylesheet" type="text/css"/>
+        <script src="../js/funciones.js" type="text/javascript"></script>
+        <meta name="viewport" content="user-scalable=no,width=device-width,initial-scale = 1.0; maximum-scale=1.0;">
+    </head>
+    <body style="cursor: default;" itemscope="" itemtype="http:schema.org/ItemPage">
+        <header>
+            <div id="logo"></div>
+            <nav id="topMenu">
+                <a class="home" title="conversor unidades" href="../index.html"></a>
+                <a class="sitemap" title="mapa de la web" href="#"></a>
+                <a class="links" title="enlaces" href="#"></a>
+                <a class="contact" title="Contacto" href="#"></a>
+                <a class="webmaster" title="Calculadoras de conversión métrica para páginas web" href="#"></a>
+            </nav>
+            <div id="breadcrumb" itemprop="breadcrumb">
+                <a href="../index.html">conversor unidades</a> &gt; 
+                <a href="../conversion-de-unidades-de-temperatura.html">conversión de temperatura</a>&gt; 
+                <a href="conversion-de-fahrenheit.html">grados Fahrenheit</a> &gt; 
+                <a href="fahrenheit-a-rankine.html">Fahrenheit a Rankine</a>
+            </div>
+        </header>
+        <div class="main">
+            <div class="left col">
+                <section id="userConvert">
+                    <h1 itemprop="name" class="temperatura">grados Fahrenheit a grados Rankine</h1>
+                    <form autocomplete="off" id="convertForm">
+			<input name="argumentConv" id="argumentConv" class="inputField desktopField" 
+                               placeholder="ºF" autofocus="" type="number" oninput="convertir_fahrenheit_a_rankine();">
+                    </form>                    
+                </section>
+                <section id="result">		    
+		    <div class="control">Precisión
+			<select id="sigfig" class="controlOptions">
+				<option value="0" selected="selected">Seleccione solución</option>
+				<option value="1">1 cifra significativa</option>
+				<option value="2">2 cifras significativas</option>
+				<option value="3">3 cifras significativas</option>
+				<option value="4">4 cifras significativas</option>
+				<option value="5">5 cifras significativas</option>
+				<option value="6">6 cifras significativas</option>
+				<option value="7">7 cifras significativas</option>
+				<option value="8">8 cifras significativas</option>			
+			</select>
+		    </div>
+		    <div class="control">Formato
+			<select id="format" class="controlOptions">
+				<option value="0" selected="selected">Decimal</option>
+                                <option value="-1">Fracciones</option>
+			</select>
+		    </div>
+		    <div class="clear"></div>
+		    <p id="answer">Resultado</p>
+		    <div class="clear"></div>
+                    <p class="note" id="fraction">Nota: los resultados fraccionarios 
+                        se redondean lo máximo posible al 1/64. Para una respuesta más exacta, 
+                        seleccione "decimal" de entre las opciones encima del resultado
+                    </p>
+                    <p class="note" id="decimal">Nota: puede aumentar o reducir la 
+                        precisión de la respuesta seleccionando la cantidad de cifras 
+                        representativas deseadas de entre las opciones encima del resultado
+                    </p>
+                    <p class="note" id="subnote">Nota: para un resultado decimal puro, 
+                        seleccione "decimal" de entre las opciones encima del resultado.
+                    </p>
+                    <!-- conditional-12 -->
+                    <p class="note" id="lastUpdateTime"><!-- freetext-202 -->
+                        Note: For a pure decimal result please select 'decimal' from the options 
+                        above the result.<!-- END -->
+                    </p><!-- END-notconditional -->		    
+                    <a id="Formula" class="infoLink underButton bluebg formula">Mostrar fórmula</a>
+                    <div id="FormulaBox" class="infoBox"><div class="wspace"></div><div class="wrow"><div class="wcol wleft">ºR =</div><div class="wcol wmiddle">(ºF  - 32)</div><div class="wcol wright"> + 491.67</div><div class="wcol wleft">&nbsp;</div><div class="wcol wmiddle wline"></div><div class="wcol wright"></div><div class="wcol wleft">&nbsp;</div><div class="wcol wmiddle"></div><div class="wcol wright">&nbsp;</div></div></div>
+                    <a id="Working" class="infoLink underButton bluebg working">Mostrar funcionamiento</a>
+                    <div id="WorkingBox" class="infoBox"></div>
+                    <a id="Exponential" class="infoLink underButton bluebg exponential">
+                        Mostrar resultado en formato exponencial </a>
+                    <div id="ExponentialBox" itemtype="http://schema.org/Quantity" class="infoBox"></div>
+                </section>
+                <div class="clear"></div>
+                <a href="#" id="webTool" class="underButton calcIcon bluebg">Añadir esta calculadora para su sitio web</a><!-- END -->
+		<a href="rankine-a-fahrenheit.html" class="underButton swapIcon bluebg">Intercambiar unidades</a>
+		<a href="#" class="underButton tableIcon bluebg" id="tableLink">Mostrar tabla</a>
+                <article id="fromUnitDesc" class="typeDef">
+                    <h2>
+                        <a href="conversion-de-fahrenheit.html" itemprop="isPartOf">Fahrenheit</a>
+                    </h2>
+                    <p></p>
+                    <p></p>
+                    <p>Fahrenheit es una escala de temperatura 
+                        termodinámica, donde el punto de congelación del agua es a 32 grados 
+                        Fahrenheit (°F) y el punto de ebullición a 212 ° F ( a una presión 
+                        atmosférica normal). Esto sitúa los puntos de ebullición y congelación 
+                        del agua exactamente a 180 grados de diferencia. Por lo tanto, un grado 
+                        en la escala Fahrenheit es 1/180 del intervalo entre el punto de 
+                        congelación y el punto de ebullición del agua. El cero absoluto se 
+                        define como -459,67 °F.
+                    </p>
+                    <p>Una diferencia de temperatura de 1 °F 
+                        es el equivalente de una diferencia de temperatura de 0,556 °C.
+                    </p>
+                    <p></p>
+                </article>
+                <article id="formula" class="typeDef">
+                    <div class="wspace"></div>
+                    <div class="wrow">
+                        <div class="wcol wleft">ºR =</div>
+                        <div class="wcol wmiddle">(ºF  - 32)</div>
+                        <div class="wcol wright"> + 491.67</div>
+                        <div class="wcol wleft">&nbsp;</div>
+                        <div class="wcol wmiddle wline"></div>
+                        <div class="wcol wright"></div>
+                        <div class="wcol wleft">&nbsp;</div>
+                        <div class="wcol wmiddle"></div>
+                        <div class="wcol wright">&nbsp;</div>
+                            
+                    </div>
+                </article>
+                <article id="toUnitDesc" class="typeDef">
+                    <h2><a href="conversion-de-rankine.html">Rankine</a></h2>
+                    <p>Una versión Fahrenheit de la escala Kelvin. Basado en las 
+                        definiciones de la escala Fahrenheit y en la evidencia práctica de que 
+                        cero absoluto es -459,67ºF
+                    </p>
+                </article>
+                
+            </div>
+            <div id="sideMenu" class="sideMenu">
+                <a href="http://www.metric-conversions.org/es/tablas-de-equivalencias.htm" class="featureConv tableIcon bluebg">tabla de conversiones</a>
+                <a href="http://www.metric-conversions.org/es/app.htm" class="featureConv appIcon bluebg">Aplicación para iPhone y Android</a>
+                <a href="http://www.metric-conversions.org/es/website-tools.htm" id="webmaster" class="featureConv calcIcon bluebg">Calculadoras de conversión métrica para páginas web</a>		
+                <a href="../conversion-de-moneda.html" title="Currency Conversion" class="typeConv currency" id="012000000">Moneda</a>
+                <a href="../conversion-de-unidades-de-temperatura.html" title="Temperature Conversion" class="typeConv temperature" id="001000000">Temperatura</a>
+                <a href="../conversion-de-unidades-de-peso.html" title="Weight Conversion" class="typeConv weight" id="005000000">Peso</a>
+                <a href="../conversion-de-unidades-de-longitud.html" title="Length Conversion" class="typeConv length" id="002000000">Longitud</a>
+                <a href="../conversion-de-unidades-de-area.html" title="Area Conversion" class="typeConv area" id="003000000">Área</a>
+                <a href="../conversion-de-unidades-de-volumen.html" title="Volume Conversion" class="typeConv volume" id="004000000">Volumen</a>
+                <a href="../conversion-de-unidades-de-velocidad.html" title="Speed Conversion" class="typeConv speed" id="006000000">Velocidad</a>
+                <a href="../conversion-de-unidades-de-tiempo.html" title="Time Conversion" class="typeConv time" id="007000000">Tiempo</a>
+            </div>
+            <div class="clear"></div>           
+            <div class="details"></div>                        
+            <div class="clear"></div>
+        </div>
+        <footer>
+            <div class="greyBg">
+            <nav id="menulinks">
+                <ul>				
+                    <li><a href="index.html" id="home" class="">conversor unidades</a></li>
+                    <li><a href="convertidor.html" id="converter" class="">conversor medidas</a></li>                                        
+                    <li><a href="mapa.html" id="sitemap" class="topLink">mapa de la web</a></li>
+                    <li><a href="enlaces.html" id="links" class="topLink">enlaces</a></li>
+                    <li><a href="mailto:" id="contact" class="topLink">Contacto</a></li>
+                </ul>
+            </nav>
+            </div>
+            <div class="clear"></div>
+            <div class="footerText">
+                <p>Este sitio es soporte y propiedad de Wight. Hat Ltd ©2003-2015</p>
+                <p>Nuestros términos y condiciones se pueden encontrar en: <a href="http://terminos.html">términos y condiciones</a></p>
+                <p>Si bien se ha hecho todo esfuerzo para asegurar la precisión de las
+                    calculadoras y tablas proporcionadas por este sitio, no podemos 
+                    garantizar ni hacernos responsables de los errores que surjan. Si 
+                    detecta algún error en este sitio, le agradeceríamos que contactara con 
+                    nosotros en el enlace que aparece en la parte superior de esta página y 
+                    procuraremos corregirlos tan pronto como sea posible.</p>
+                <p>Esta página fue actualizada:: mar. 27 oct. 2015</p>
+                <p><a href="https://google.com.ar">Encuéntranos en Google</a></p>
+            </div>
+        </footer>
+        
+    </body>
+</html>
